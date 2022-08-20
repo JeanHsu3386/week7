@@ -26,7 +26,7 @@
   delay: 0, // values from 0 to 3000, with step 50ms
   duration: 400, // values from 0 to 3000, with step 50ms
   easing: 'ease', // default easing for AOS animations
-  once: true, // whether animation should happen only once - while scrolling down
+  once: false, // whether animation should happen only once - while scrolling down
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
@@ -44,8 +44,8 @@
     </div>
 </div>
 <div class="about">
-    <h2 data-aos="fade-up" class="titleBlack">About</h2>
-    <img data-aos="flip-left" src="images/photo.png" alt="個人照" class="photo">
+    <div data-aos="fade-up"><h2 class="titleBlack">About</h2></div>
+    <img src="images/photo.png" alt="個人照" class="photo">
     <div class="personalInfo">Joanne Chen<br/>1997/10/10<p>National Hex School Normal University</p><p>Department of Visual Design</p></div>
     <ul class="skillList">
         <li>Founder of &#34;XXXD Official&#34;</li>
